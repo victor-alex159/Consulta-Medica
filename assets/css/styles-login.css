@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+#website {
+    display: grid;
+    background: #F8F8F8;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 60px 60px repeat(2, 1fr) 140px;
+    width: 100%;
+    height: 1200px;
+    margin: 0px auto;
+}
+
+#logo1 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#logo1 img {
+    width: 30%;
+}
+
+#logo1 h2 {
+    font-size: 25px;
+    margin-left: 130px;
+    margin-top: -68px
+}
+
+#logo2 {
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#logo2 img {
+    width: 15%;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+#logo2 h2 {
+    font-size: 25px;
+    margin-left: 171px;
+    margin-top: -49px;
+}
+
+#logo3 {
+    width: 100%;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#logo3 h2 {
+    font-size: 25px;
+    margin-left: 161px;
+    margin-top: -49px;
+}
+
+#logo3 img {
+    width: 15%;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#menu {
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+    grid-column: 1 / 6;
+    grid-row: 2/3;
+    background: #DFE4EA;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0px;
+    list-style: none;
+    justify-content: center;
+}
+
+#menu a {
+    color: #444;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 15px;
+    transition: all 300ms;
+}
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 18px;
+    transition: all 300ms;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 200ms;
+}
+
+#menu ul li a:hover {
+    color: black;
+    transform: scale(1.2, 1.2);
+    border-bottom: 1px solid rgb(17, 17, 48);
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #777a8f;
+}
+
+#menu>ul>li>ul {
+    display: none;
+    position: absolute;
+    text-align: left;
+    width: 160px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+    z-index: 1;
+}
+
+#menu>ul>li:hover>ul {
+    display: block;
+    height: auto;
+    margin-top: 15px;
+}
+
+#menu>ul>li:hover>ul>li {
+    width: 100%;
+    background: #DFE4EA;
+    padding: 2px;
+    line-height: 30px;
+    font-size: 13px;
+    transition: all 300ms;
+}
+
+#menu>ul>li:hover>ul>li>a {
+    color: black;
+}
+
+#menu>ul>li:hover>ul>li:hover {
+    box-shadow: 0px 0px 4px #ccc inset;
+}
+
+#login {
+    display: grid;
+    grid-template-rows: 19% 58% 23%;
+    grid-column: 2/5;
+    grid-row: 4/6;
+}
+
+.aside-box {
+    width: 100%;
+    border: 5px solid #C6D1DC;
+    border-radius: 5px;
+    margin: 0px auto;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+#login #header-login {
+    background: #23619F;
+}
+
+#login #header-login h2 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#login h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#form-caja {
+    grid-row: 2/3;
+    background: #FFFFFF;
+}
+
+#login .icon {
+    display: flex;
+    /* width: 20%; */
+    font-size: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+
+#login #user {
+    width: 20%;
+}
+
+#login #password {
+    width: 15%;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+    display: flex;
+    margin: 0px auto;
+    width: 37%;
+    height: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc inset;
+    border-radius: 5px;
+}
+
+#login input[type="submit"] {
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    margin: 0px auto;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#login a {
+    display: block;
+    width: 20%;
+    margin: 0px auto;
+    padding: 3px;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+#footer {
+    height: 120px;
+    background: black;
+    text-align: center;
+    color: white;
+    grid-column: 1 / 6;
+    grid-row: 10 / 11;
+    border-top: 1px solid #444;
+    line-height: 70px;
+    font-size: 20px;
+}
